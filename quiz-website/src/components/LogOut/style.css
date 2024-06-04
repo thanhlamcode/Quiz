@@ -1,0 +1,4 @@
+button:focus{
+    background-color: yellow;
+    color: red;
+}

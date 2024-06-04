@@ -1,0 +1,1205 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Nguyen Thi A",
+      "username": "nguyenthia",
+      "password": "nguyenthiabc",
+      "token": "bkP9VQydMBRmW670bqD7"
+    },
+    {
+      "id": 2,
+      "fullName": "Do Thi B",
+      "username": "dothib",
+      "password": "dothib",
+      "token": "KsZitkpwbbPF3fdjbQWh"
+    },
+    {
+      "id": 3,
+      "fullName": "Ngo Van C",
+      "username": "ngovanc",
+      "password": "ngovanc",
+      "token": "abVy7NJdWVNgqGcCD9Lo"
+    },
+    {
+      "username": "heolechipu",
+      "password": "haoyeumyratratnhie",
+      "fullName": "Lê Chí Hào",
+      "token": "RTSfcgl0pdHKWrMlnV98",
+      "id": 4
+    },
+    {
+      "username": "heole",
+      "password": "haoyeumyratratnhie",
+      "fullName": "Lê Chí Hào",
+      "token": "GL1ilT6NnwpeHRWv4Ajx",
+      "id": 5
+    },
+    {
+      "username": "thanhlamcode",
+      "password": "thanhlam",
+      "fullName": "ĐOÀN THANH LÂM",
+      "token": "VuemSr42LRQam7jwJZNo",
+      "id": 6
+    },
+    {
+      "username": "nhalinh",
+      "password": "nhalinh",
+      "fullName": "HÀ TRẦN NHÃ LINH",
+      "token": "3ubhdqmsjandofapc9RP",
+      "id": 7
+    },
+    {
+      "username": "haole",
+      "password": "haole",
+      "fullName": "LEE CHEE HAO",
+      "token": "vHfCK8PQJOpnJPpTX8D0",
+      "id": 8
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "HTML5"
+    },
+    {
+      "id": 2,
+      "name": "CSS3"
+    },
+    {
+      "id": 3,
+      "name": "Javascript"
+    },
+    {
+      "id": 4,
+      "name": "ReactJS"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topicId": 1,
+      "question": "HTML là viết tắt của...?",
+      "answers": [
+        "Hyperlinks and Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyper Text Markup Language"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 2,
+      "topicId": 1,
+      "question": "Thẻ HTML nào dùng để tạo đường liên kết?",
+      "answers": [
+        "<a>",
+        "<link>",
+        "<href>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để chèn hình ảnh trong HTML?",
+      "answers": [
+        "<image>",
+        "<img>",
+        "<pic>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để tạo tiêu đề lớn nhất trong HTML?",
+      "answers": [
+        "<h1>",
+        "<h6>",
+        "<header>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "topicId": 1,
+      "question": "Thuộc tính nào dùng để đặt URL cho một liên kết trong thẻ <a>?",
+      "answers": [
+        "src",
+        "href",
+        "link"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "topicId": 1,
+      "question": "Thẻ HTML nào dùng để tạo danh sách không thứ tự?",
+      "answers": [
+        "<ul>",
+        "<ol>",
+        "<li>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "topicId": 1,
+      "question": "Thẻ HTML nào dùng để tạo danh sách có thứ tự?",
+      "answers": [
+        "<ul>",
+        "<ol>",
+        "<li>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "topicId": 1,
+      "question": "Thuộc tính nào dùng để thêm văn bản thay thế cho hình ảnh?",
+      "answers": [
+        "alt",
+        "title",
+        "description"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "topicId": 1,
+      "question": "Thẻ HTML nào dùng để tạo một ô nhập văn bản một dòng?",
+      "answers": [
+        "<textarea>",
+        "<input type='text'>",
+        "<input type='textarea'>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "topicId": 1,
+      "question": "Thẻ HTML nào dùng để tạo bảng?",
+      "answers": [
+        "<table>",
+        "<tab>",
+        "<t>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 11,
+      "topicId": 2,
+      "question": "CSS là viết tắt của...?",
+      "answers": [
+        "Cascading Style Sheets",
+        "Colorful Style Sheets",
+        "Computer Style Sheets"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 12,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để thay đổi màu nền của một phần tử?",
+      "answers": [
+        "background-color",
+        "color",
+        "bgcolor"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để thay đổi màu văn bản?",
+      "answers": [
+        "text-color",
+        "color",
+        "font-color"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để căn giữa một phần tử theo chiều ngang?",
+      "answers": [
+        "align-center",
+        "center-align",
+        "margin: auto"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để thay đổi font chữ?",
+      "answers": [
+        "font-family",
+        "font-weight",
+        "font-style"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 16,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để thêm đổ bóng cho văn bản?",
+      "answers": [
+        "shadow",
+        "text-shadow",
+        "font-shadow"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để thay đổi kích thước văn bản?",
+      "answers": [
+        "font-size",
+        "text-size",
+        "size"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để tạo khoảng cách bên trong một phần tử?",
+      "answers": [
+        "margin",
+        "padding",
+        "border-spacing"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để tạo đường viền cho một phần tử?",
+      "answers": [
+        "border",
+        "outline",
+        "frame"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 20,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để ẩn một phần tử?",
+      "answers": [
+        "display: none",
+        "visibility: hidden",
+        "opacity: 0"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "topicId": 3,
+      "question": "JavaScript là một ngôn ngữ lập trình...?",
+      "answers": [
+        "Được biên dịch",
+        "Được thông dịch",
+        "Cả hai đều đúng"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để hiển thị một hộp thoại cảnh báo trong JavaScript?",
+      "answers": [
+        "alert()",
+        "msg()",
+        "popup()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 23,
+      "topicId": 3,
+      "question": "Toán tử nào dùng để so sánh cả giá trị và kiểu dữ liệu?",
+      "answers": [
+        "==",
+        "===",
+        "!="
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "topicId": 3,
+      "question": "Lệnh nào dùng để tạo một hàm trong JavaScript?",
+      "answers": [
+        "function myFunction()",
+        "def myFunction()",
+        "func myFunction()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 25,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để thêm phần tử vào cuối mảng?",
+      "answers": [
+        "push()",
+        "pop()",
+        "shift()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 26,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để loại bỏ phần tử cuối cùng của mảng?",
+      "answers": [
+        "push()",
+        "pop()",
+        "shift()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "topicId": 3,
+      "question": "Toán tử nào dùng để nối hai chuỗi lại với nhau?",
+      "answers": [
+        "+",
+        "&",
+        "."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 28,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để chuyển đổi chuỗi thành số nguyên?",
+      "answers": [
+        "parseInt()",
+        "parseFloat()",
+        "Number()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 29,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để kiểm tra xem một mảng có chứa một phần tử không?",
+      "answers": [
+        "contains()",
+        "includes()",
+        "has()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để lấy độ dài của mảng?",
+      "answers": [
+        "size()",
+        "length()",
+        "count()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "topicId": 4,
+      "question": "ReactJS là một thư viện JavaScript dùng để...?",
+      "answers": [
+        "Quản lý trạng thái",
+        "Tạo giao diện người dùng",
+        "Xử lý API"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 32,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để tạo một thành phần mới trong ReactJS?",
+      "answers": [
+        "createComponent()",
+        "new Component()",
+        "React.createElement()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 33,
+      "topicId": 4,
+      "question": "Trong ReactJS, state là gì?",
+      "answers": [
+        "Thuộc tính cố định của component",
+        "Dữ liệu động của component",
+        "Phương thức của component"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "topicId": 4,
+      "question": "Hook nào dùng để quản lý trạng thái trong hàm component?",
+      "answers": [
+        "useEffect",
+        "useState",
+        "useReducer"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 35,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để lấy dữ liệu từ API trong ReactJS?",
+      "answers": [
+        "fetch()",
+        "get()",
+        "axios()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 36,
+      "topicId": 4,
+      "question": "Hook nào dùng để thực hiện các tác vụ phụ trong component?",
+      "answers": [
+        "useEffect",
+        "useState",
+        "useReducer"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 37,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để truyền dữ liệu từ component cha xuống component con?",
+      "answers": [
+        "props",
+        "state",
+        "context"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 38,
+      "topicId": 4,
+      "question": "Công cụ nào dùng để quản lý state toàn cục trong ứng dụng ReactJS?",
+      "answers": [
+        "Redux",
+        "Context API",
+        "Both đều đúng"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 39,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để cập nhật state trong class component?",
+      "answers": [
+        "setState()",
+        "updateState()",
+        "changeState()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 40,
+      "topicId": 4,
+      "question": "ReactJS được phát triển bởi công ty nào?",
+      "answers": [
+        "Google",
+        "Facebook",
+        "Microsoft"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 41,
+      "topicId": 1,
+      "question": "Thuộc tính nào dùng để xác định tiêu đề của một trang HTML?",
+      "answers": [
+        "meta",
+        "title",
+        "header"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 42,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để nhúng một đoạn JavaScript vào trang HTML?",
+      "answers": [
+        "<js>",
+        "<javascript>",
+        "<script>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 43,
+      "topicId": 1,
+      "question": "Thẻ HTML nào được dùng để tạo một vùng chứa cho đồ họa (ví dụ: đồ thị, vẽ hình)?",
+      "answers": [
+        "<canvas>",
+        "<svg>",
+        "<graphic>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 44,
+      "topicId": 1,
+      "question": "Thẻ nào dùng để xác định một đoạn văn bản?",
+      "answers": [
+        "<p>",
+        "<paragraph>",
+        "<text>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 45,
+      "topicId": 1,
+      "question": "Thẻ nào được sử dụng để chèn một đoạn trích dẫn dài?",
+      "answers": [
+        "<blockquote>",
+        "<q>",
+        "<cite>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 46,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để thay đổi độ trong suốt của một phần tử?",
+      "answers": [
+        "transparency",
+        "opacity",
+        "visibility"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 47,
+      "topicId": 2,
+      "question": "Giá trị nào của thuộc tính `position` sẽ giữ phần tử ở vị trí cố định khi cuộn trang?",
+      "answers": [
+        "static",
+        "relative",
+        "fixed"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 48,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để tạo hiệu ứng mờ dần cho phần tử?",
+      "answers": [
+        "fade",
+        "transition",
+        "animation"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 49,
+      "topicId": 2,
+      "question": "Giá trị nào của thuộc tính `display` sẽ làm phần tử biến mất nhưng vẫn chiếm không gian?",
+      "answers": [
+        "none",
+        "block",
+        "inline-block",
+        "visibility: hidden"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 50,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để thay đổi kiểu chữ viết hoa, viết thường của văn bản?",
+      "answers": [
+        "text-transform",
+        "text-decoration",
+        "text-style"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 51,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để lặp qua các phần tử của mảng trong JavaScript?",
+      "answers": [
+        "forEach",
+        "for-in",
+        "for-of"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 52,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để lấy ký tự tại một vị trí cụ thể trong chuỗi?",
+      "answers": [
+        "charAt()",
+        "getChar()",
+        "getCharacter()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 53,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để thêm một phần tử vào đầu mảng?",
+      "answers": [
+        "push()",
+        "unshift()",
+        "concat()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 54,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để lấy ra phần tử đầu tiên của mảng?",
+      "answers": [
+        "pop()",
+        "shift()",
+        "unshift()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 55,
+      "topicId": 3,
+      "question": "Toán tử nào dùng để kiểm tra giá trị null hoặc undefined trong JavaScript?",
+      "answers": [
+        "??",
+        "===",
+        "||"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 56,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để chuyển đổi chuỗi thành chữ thường?",
+      "answers": [
+        "toLowerCase()",
+        "toLower()",
+        "changeCase()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 57,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để kiểm tra kiểu dữ liệu của một biến?",
+      "answers": [
+        "typeof",
+        "type",
+        "instanceof"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 58,
+      "topicId": 3,
+      "question": "Toán tử nào dùng để hợp nhất các đối tượng trong JavaScript?",
+      "answers": [
+        "...",
+        "Object.assign()",
+        "Both đều đúng"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 59,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để kiểm tra xem một biến có phải là mảng không?",
+      "answers": [
+        "Array.isArray()",
+        "isArray()",
+        "typeof Array"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 60,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để lấy một phần của mảng mà không thay đổi mảng gốc?",
+      "answers": [
+        "slice()",
+        "splice()",
+        "cut()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 61,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để tạo một context trong React?",
+      "answers": [
+        "createContext",
+        "new Context",
+        "Context.create"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 62,
+      "topicId": 4,
+      "question": "Hook nào dùng để lấy giá trị của context trong React?",
+      "answers": [
+        "useContext",
+        "useState",
+        "useReducer"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 63,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để tạo một component mới trong React bằng cú pháp class?",
+      "answers": [
+        "React.Component",
+        "React.createComponent",
+        "Component.create"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 64,
+      "topicId": 4,
+      "question": "Lifecycle method nào chạy sau khi component được render lần đầu?",
+      "answers": [
+        "componentDidMount",
+        "componentDidUpdate",
+        "componentWillUnmount"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 65,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để bắt sự kiện trong React?",
+      "answers": [
+        "addEventListener",
+        "onEvent",
+        "Both đều đúng"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 66,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để cập nhật state trong function component?",
+      "answers": [
+        "setState",
+        "updateState",
+        "useState"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 67,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để bắt lỗi trong component?",
+      "answers": [
+        "componentDidCatch",
+        "componentDidError",
+        "componentWillCatch"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 68,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để truyền dữ liệu giữa các component mà không dùng props?",
+      "answers": [
+        "context",
+        "state",
+        "props drilling"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 69,
+      "topicId": 4,
+      "question": "React Fragment dùng để làm gì?",
+      "answers": [
+        "Đóng gói nhiều phần tử con mà không tạo thêm phần tử DOM",
+        "Tạo một container cho các phần tử con",
+        "Both đều đúng"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 70,
+      "topicId": 4,
+      "question": "Cú pháp nào dùng để kết hợp nhiều class trong JSX?",
+      "answers": [
+        "className",
+        "classnames",
+        "Both đều đúng"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 71,
+      "topicId": 1,
+      "question": "Thẻ HTML nào được sử dụng để tạo một đường dẫn liên kết?",
+      "answers": [
+        "<link>",
+        "<a>",
+        "<url>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 72,
+      "topicId": 1,
+      "question": "Thuộc tính nào của thẻ <a> dùng để mở liên kết trong tab mới?",
+      "answers": [
+        "href",
+        "target",
+        "rel"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 73,
+      "topicId": 1,
+      "question": "Thẻ HTML nào dùng để chèn một hình ảnh vào trang?",
+      "answers": [
+        "<img>",
+        "<picture>",
+        "<image>"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 74,
+      "topicId": 1,
+      "question": "Thuộc tính nào của thẻ <img> dùng để xác định văn bản thay thế nếu hình ảnh không hiển thị?",
+      "answers": [
+        "alt",
+        "title",
+        "src"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 75,
+      "topicId": 1,
+      "question": "Thẻ HTML nào được sử dụng để tạo một danh sách có thứ tự?",
+      "answers": [
+        "<ul>",
+        "<ol>",
+        "<li>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 76,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để tạo khoảng cách giữa các đường viền của phần tử?",
+      "answers": [
+        "padding",
+        "margin",
+        "border-spacing"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 77,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để xác định đường viền của phần tử?",
+      "answers": [
+        "border",
+        "outline",
+        "frame"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 78,
+      "topicId": 2,
+      "question": "Giá trị nào của thuộc tính `display` làm phần tử trở thành một hàng ngang trong bố cục Flexbox?",
+      "answers": [
+        "block",
+        "flex",
+        "inline"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 79,
+      "topicId": 2,
+      "question": "Thuộc tính CSS nào dùng để thay đổi màu nền của phần tử?",
+      "answers": [
+        "color",
+        "background-color",
+        "bgcolor"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 80,
+      "topicId": 2,
+      "question": "Giá trị nào của thuộc tính `position` làm phần tử được định vị tương đối với tổ tiên gần nhất có thuộc tính position khác static?",
+      "answers": [
+        "relative",
+        "absolute",
+        "fixed"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 81,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để chuyển đổi một chuỗi JSON thành đối tượng JavaScript?",
+      "answers": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "JSON.convert()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 82,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để kiểm tra xem một biến có phải là số không?",
+      "answers": [
+        "isNaN()",
+        "isNumber()",
+        "isNumeric()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 83,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để kết hợp hai hoặc nhiều mảng?",
+      "answers": [
+        "concat()",
+        "join()",
+        "merge()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 84,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để sao chép một phần của mảng thành một mảng mới?",
+      "answers": [
+        "slice()",
+        "splice()",
+        "copy()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 85,
+      "topicId": 3,
+      "question": "Toán tử nào dùng để kiểm tra tính đúng đắn của hai giá trị mà không cần ép kiểu?",
+      "answers": [
+        "==",
+        "===",
+        "!=="
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 86,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để thêm một phần tử vào cuối mảng?",
+      "answers": [
+        "push()",
+        "pop()",
+        "append()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 87,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để tìm phần tử đầu tiên trong mảng thỏa mãn điều kiện được chỉ định?",
+      "answers": [
+        "find()",
+        "filter()",
+        "search()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 88,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để dừng vòng lặp hiện tại và chuyển sang vòng lặp kế tiếp?",
+      "answers": [
+        "break",
+        "continue",
+        "return"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 89,
+      "topicId": 3,
+      "question": "Phương thức nào dùng để kiểm tra xem một mảng có chứa phần tử thỏa mãn điều kiện nào đó không?",
+      "answers": [
+        "includes()",
+        "every()",
+        "some()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 90,
+      "topicId": 3,
+      "question": "Câu lệnh nào dùng để kiểm tra một biến có phải là đối tượng không?",
+      "answers": [
+        "isObject()",
+        "typeof",
+        "instanceof"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 91,
+      "topicId": 4,
+      "question": "Hook nào dùng để quản lý hiệu ứng phụ trong React?",
+      "answers": [
+        "useState",
+        "useReducer",
+        "useEffect"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 92,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để render component lên DOM trong React?",
+      "answers": [
+        "ReactDOM.render()",
+        "renderComponent()",
+        "React.render()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 93,
+      "topicId": 4,
+      "question": "Lifecycle method nào được gọi trước khi component được unmount?",
+      "answers": [
+        "componentWillUnmount",
+        "componentWillMount",
+        "componentDidUnmount"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 94,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để chuyển đổi component thành một PureComponent?",
+      "answers": [
+        "React.PureComponent",
+        "PureComponent.create",
+        "React.createPureComponent"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 95,
+      "topicId": 4,
+      "question": "Phương thức nào trong React dùng để cập nhật state của component?",
+      "answers": [
+        "updateState",
+        "setState",
+        "changeState"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 96,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để lấy dữ liệu từ API trong React?",
+      "answers": [
+        "fetch()",
+        "get()",
+        "axios()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 97,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để render component con trong React?",
+      "answers": [
+        "renderChildren",
+        "renderSubComponent",
+        "render"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 98,
+      "topicId": 4,
+      "question": "Hook nào dùng để quản lý context trong React?",
+      "answers": [
+        "useContext",
+        "useState",
+        "useReducer"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 99,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để tạo một ref trong React?",
+      "answers": [
+        "createRef",
+        "new Ref",
+        "makeRef"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 100,
+      "topicId": 4,
+      "question": "Phương thức nào dùng để forward ref tới component con trong React?",
+      "answers": [
+        "forwardRef",
+        "passRef",
+        "sendRef"
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "userAnswers": [
+    {
+      "userId": 5,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 1
+        },
+        {
+          "questionId": 2,
+          "answer": 2
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 3
+        }
+      ]
+    }
+  ]
+}
