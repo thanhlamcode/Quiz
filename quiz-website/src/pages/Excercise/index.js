@@ -3,7 +3,7 @@ import "./style.scss";
 import { getQuestion } from "../../service/getQuestions";
 import { useEffect, useState } from "react";
 import { infoTopic } from "../../action/setTopic";
-import { answerUser, inforUserName } from "../../action/infor";
+import { answerUser } from "../../action/infor";
 
 function Excercise() {
   const topic = useSelector((state) => state.topicReducer);
@@ -11,10 +11,6 @@ function Excercise() {
   const [answers, setAnswers] = useState([]);
   const inforUser = useSelector((state) => state.inforUserReducer);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(inforUserName());
-  }, []);
 
   const handleChange = (questionId, answerIndex) => {
     setAnswers((prevAnswers) => {
