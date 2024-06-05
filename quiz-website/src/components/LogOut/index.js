@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./style.css";
 import { useDispatch } from "react-redux";
 import { login } from "../../action/login";
@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 function LogOut() {
   const dispatch = useDispatch();
   const [focusIndex, setFocusIndex] = useState(null);
-
+  const navigate = useNavigate();
   const handleClick = () => {
     Swal.fire({
       title: "Bạn có muốn đăng xuất?",
@@ -18,6 +18,7 @@ function LogOut() {
       if (result.isConfirmed) {
         Swal.fire("Đăng xuất thành công!", "", "success");
         dispatch(login());
+        navigate("/login");
       }
     });
   };

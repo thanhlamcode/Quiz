@@ -4,6 +4,7 @@ import Excercise from "../pages/Excercise";
 import Home from "../pages/Home";
 import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage";
+import ShowResult from "../pages/ShowResult";
 import Topic from "../pages/Topic";
 
 export const routes = [
@@ -22,6 +23,10 @@ export const routes = [
       {
         path: "register",
         element: <RegisterPage />,
+      },
+      {
+        path: "answer/:id", // Đường dẫn động
+        element: <ShowResult />,
       },
       {
         path: "answer",

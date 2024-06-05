@@ -5,10 +5,13 @@ import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
 import { login } from "../../action/login";
 import { inforUserName } from "../../action/infor";
+import { useNavigate } from "react-router-dom";
+
 function LoginPage() {
   const dispatch = useDispatch();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate(); // Sử dụng useNavigate để điều hướng
   const handleLogin = (e) => {
     e.preventDefault();
     getInfo()
@@ -24,6 +27,9 @@ function LoginPage() {
           });
           dispatch(inforUserName(user.id));
           dispatch(login());
+          setTimeout(() => {
+            navigate("/");
+          }, 1000);
         } else {
           Swal.fire({
             icon: "error",
