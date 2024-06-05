@@ -4,6 +4,7 @@ import { getQuestion } from "../../service/getQuestions";
 import { useEffect, useState } from "react";
 import { infoTopic } from "../../action/setTopic";
 import { answerUser } from "../../action/infor";
+import { post } from "../../until/request";
 
 function Excercise() {
   const topic = useSelector((state) => state.topicReducer);
@@ -18,13 +19,18 @@ function Excercise() {
       const filteredAnswers = prevAnswers.filter(
         (answer) => answer.questionId !== questionId
       );
+      // Tìm đáp án chính xác cho câu hỏi này
+      const correctAnswer = questionData.find(
+        (item) => item.id === questionId
+      ).correctAnswer;
 
-      // Thêm câu trả lời mới vào mảng đã lọc
+      // Thêm câu trả lời mới vào mảng đã lọc, bao gồm cả đáp án chính xác
       return [
         ...filteredAnswers,
         {
           questionId: questionId,
           answer: answerIndex,
+          correctAnswer: correctAnswer, // Thêm đáp án chính xác vào đối tượng câu trả lời
         },
       ];
     });
@@ -63,14 +69,21 @@ function Excercise() {
         console.log(questions);
       });
     }
-
     // dispatch infoTopic chỉ khi topicId thay đổi
     dispatch(infoTopic(topicId));
   }, [topic, dispatch]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // post()
+    // Kiểm tra lại inforUser trước khi gửi
+    if (inforUser && typeof inforUser === "object") {
+      console.log(inforUser);
+      post("/userAnswers", inforUser).catch((error) => {
+        console.error("Error when posting user answers:", error);
+      });
+    } else {
+      console.error("Invalid inforUser data:", inforUser);
+    }
   };
 
   return (
