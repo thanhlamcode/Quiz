@@ -16,15 +16,14 @@ function LoginPage() {
         const user = data.find(
           (item) => item.username === username && item.password === password
         );
-        dispatch(inforUserName(user.id));
         if (user) {
           Swal.fire({
             title: "Good job!",
             text: "Đăng nhập thành công!",
             icon: "success",
           });
+          dispatch(inforUserName(user.id));
           dispatch(login());
-          // history.push("/home");
         } else {
           Swal.fire({
             icon: "error",

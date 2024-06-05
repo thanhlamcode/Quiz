@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { infoTopic } from "../../action/setTopic";
 import { answerUser } from "../../action/infor";
 import { post } from "../../until/request";
+import Swal from "sweetalert2";
 
 function Excercise() {
   const topic = useSelector((state) => state.topicReducer);
@@ -78,8 +79,11 @@ function Excercise() {
     // Kiểm tra lại inforUser trước khi gửi
     if (inforUser && typeof inforUser === "object") {
       console.log(inforUser);
-      post("/userAnswers", inforUser).catch((error) => {
-        console.error("Error when posting user answers:", error);
+      post("/userAnswers", inforUser);
+      Swal.fire({
+        title: "Good job!",
+        text: "Nộp bài thành công!",
+        icon: "success",
       });
     } else {
       console.error("Invalid inforUser data:", inforUser);

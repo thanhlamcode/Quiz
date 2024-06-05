@@ -1,17 +1,20 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import { useDispatch } from "react-redux";
 import { login } from "../../action/login";
 import Swal from "sweetalert2";
+
 function LogOut() {
   const dispatch = useDispatch();
+  const [focusIndex, setFocusIndex] = useState(null);
+
   const handleClick = () => {
     Swal.fire({
       title: "Bạn có muốn đăng xuất?",
       showCancelButton: true,
       confirmButtonText: "Đăng Xuất",
     }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         Swal.fire("Đăng xuất thành công!", "", "success");
         dispatch(login());
@@ -23,13 +26,28 @@ function LogOut() {
     <>
       <div>
         <Link to="/">
-          <button>Home</button>
+          <button
+            className={`button_nav ${focusIndex === 0 ? "focus" : ""}`}
+            onClick={() => setFocusIndex(0)}
+          >
+            Home
+          </button>
         </Link>
         <Link to="topic">
-          <button>Topic</button>
+          <button
+            className={`button_nav ${focusIndex === 1 ? "focus" : ""}`}
+            onClick={() => setFocusIndex(1)}
+          >
+            Topic
+          </button>
         </Link>
         <Link to="answer">
-          <button>Answer</button>
+          <button
+            className={`button_nav ${focusIndex === 2 ? "focus" : ""}`}
+            onClick={() => setFocusIndex(2)}
+          >
+            Answer
+          </button>
         </Link>
       </div>
       <button className="logout" onClick={handleClick}>
