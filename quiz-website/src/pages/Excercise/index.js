@@ -6,6 +6,8 @@ import { infoTopic } from "../../action/setTopic";
 import { answerUser } from "../../action/infor";
 import { post } from "../../until/request";
 import Swal from "sweetalert2";
+import { getUserAnswer } from "../../service/getUserAnswer";
+import { useNavigate } from "react-router-dom";
 
 function Excercise() {
   const topic = useSelector((state) => state.topicReducer);
@@ -13,6 +15,8 @@ function Excercise() {
   const [answers, setAnswers] = useState([]);
   const inforUser = useSelector((state) => state.inforUserReducer);
   const dispatch = useDispatch();
+  const [length, setLength] = useState(0);
+  const navigate = useNavigate();
 
   const handleChange = (questionId, answerIndex) => {
     setAnswers((prevAnswers) => {
@@ -54,7 +58,7 @@ function Excercise() {
       case "CSS3":
         topicId = 2;
         break;
-      case "Javascript":
+      case "JavaScript":
         topicId = 3;
         break;
       case "ReactJS":
@@ -74,17 +78,26 @@ function Excercise() {
     dispatch(infoTopic(topicId));
   }, [topic, dispatch]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     // Kiểm tra lại inforUser trước khi gửi
     if (inforUser && typeof inforUser === "object") {
       console.log(inforUser);
-      post("/userAnswers", inforUser);
+      await post("/userAnswers", inforUser);
       Swal.fire({
         title: "Good job!",
         text: "Nộp bài thành công!",
         icon: "success",
       });
+
+      // Lấy dữ liệu mới sau khi nộp bài
+      const newData = await getUserAnswer();
+      // Cập nhật độ dài của dữ liệu
+      setLength(newData.length);
+
+      // Chuyển hướng đến trang kết quả với độ dài mới
+      navigate(`/answer/${newData.length}`);
     } else {
       console.error("Invalid inforUser data:", inforUser);
     }

@@ -1,8 +1,11 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getUserAnswer } from "../../service/getUserAnswer";
 import { useEffect, useState } from "react";
 import { getQuestion } from "../../service/getQuestions";
 import "./styles.scss";
+import { useDispatch } from "react-redux";
+import { infoTopic } from "../../action/setTopic";
+import { topicAction } from "../../action/topic";
 
 function ShowResult() {
   const [dataResult, setDataResult] = useState([]);
@@ -13,7 +16,8 @@ function ShowResult() {
   const [total, setTotal] = useState(0);
   const [dataQuestion, setDataQuestions] = useState([]);
   const [dataDraw, setDataDraw] = useState([]);
-
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   useEffect(() => {
     getUserAnswer().then((data) => {
       setDataResult(data);
@@ -26,10 +30,10 @@ function ShowResult() {
     if (result) {
       switch (result.topicId) {
         case 1:
-          setTopic("HTML");
+          setTopic("HTML5");
           break;
         case 2:
-          setTopic("CSS");
+          setTopic("CSS3");
           break;
         case 3:
           setTopic("JavaScript");
@@ -92,6 +96,14 @@ function ShowResult() {
     }
   }, [result, dataQuestion]); // Giữ nguyên result và dataQuestion là phụ thuộc
 
+  const handleDoAgain = async () => {
+    // Dispatch hành động đặt lại chủ đề
+    dispatch(topicAction(topic));
+
+    // Chuyển hướng đến trang Excercise sau khi cập nhật thành công
+    await navigate("/excercise");
+  };
+
   return (
     <>
       <div>
@@ -147,6 +159,13 @@ function ShowResult() {
             ))}
           </div>
         </div>
+        <button
+          onClick={() => {
+            handleDoAgain();
+          }}
+        >
+          Làm lại
+        </button>
       </div>
     </>
   );
