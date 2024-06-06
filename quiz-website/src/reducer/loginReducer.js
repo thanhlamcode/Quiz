@@ -1,4 +1,4 @@
-export const loginReducer = (state = true, action) => {
+export const loginReducer = (state = false, action) => {
   switch (action.type) {
     case "LOG":
       return !state; // Thay đổi giá trị của state

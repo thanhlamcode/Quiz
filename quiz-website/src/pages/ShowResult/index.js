@@ -36,7 +36,7 @@ function ShowResult() {
           setTopic("CSS3");
           break;
         case 3:
-          setTopic("JavaScript");
+          setTopic("Javascript");
           break;
         case 4:
           setTopic("ReactJS");

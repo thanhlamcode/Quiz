@@ -1292,6 +1292,113 @@
         }
       ],
       "id": 1
+    },
+    {
+      "userId": 9,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 2,
+          "correctAnswer": 2
+        },
+        {
+          "questionId": 2,
+          "answer": 1,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 1,
+          "correctAnswer": 1
+        },
+        {
+          "questionId": 4,
+          "answer": 2,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 5,
+          "answer": 2,
+          "correctAnswer": 1
+        },
+        {
+          "questionId": 6,
+          "answer": 1,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 7,
+          "answer": 0,
+          "correctAnswer": 1
+        },
+        {
+          "questionId": 8,
+          "answer": 0,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 9,
+          "answer": 2,
+          "correctAnswer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 41,
+          "answer": 1,
+          "correctAnswer": 1
+        },
+        {
+          "questionId": 42,
+          "answer": 0,
+          "correctAnswer": 2
+        },
+        {
+          "questionId": 43,
+          "answer": 1,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 44,
+          "answer": 2,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 45,
+          "answer": 1,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 71,
+          "answer": 1,
+          "correctAnswer": 1
+        },
+        {
+          "questionId": 73,
+          "answer": 2,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 72,
+          "answer": 0,
+          "correctAnswer": 1
+        },
+        {
+          "questionId": 74,
+          "answer": 2,
+          "correctAnswer": 0
+        },
+        {
+          "questionId": 75,
+          "answer": 1,
+          "correctAnswer": 1
+        }
+      ],
+      "id": 2
     }
   ]
 }

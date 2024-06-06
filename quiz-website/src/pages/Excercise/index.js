@@ -58,7 +58,7 @@ function Excercise() {
       case "CSS3":
         topicId = 2;
         break;
-      case "JavaScript":
+      case "Javascript":
         topicId = 3;
         break;
       case "ReactJS":
