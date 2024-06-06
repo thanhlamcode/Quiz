@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { getUserAnswer } from "../../service/getUserAnswer";
 import { useEffect, useState } from "react";
+import { getQuestion } from "../../service/getQuestions";
+import "./styles.scss";
 
 function ShowResult() {
   const [dataResult, setDataResult] = useState([]);
@@ -9,11 +11,15 @@ function ShowResult() {
   const [numberTrue, setTrue] = useState(0);
   const [numberWrong, setFalse] = useState(0);
   const [total, setTotal] = useState(0);
+  const [dataQuestion, setDataQuestions] = useState([]);
+  const [dataDraw, setDataDraw] = useState([]);
+
   useEffect(() => {
     getUserAnswer().then((data) => {
       setDataResult(data);
     });
-  }, []);
+  }, [id]); // Thêm id làm phụ thuộc
+
   const result = dataResult.find((item) => item.id == id);
 
   useEffect(() => {
@@ -26,7 +32,7 @@ function ShowResult() {
           setTopic("CSS");
           break;
         case 3:
-          setTopic("Javascripts");
+          setTopic("JavaScript");
           break;
         case 4:
           setTopic("ReactJS");
@@ -36,10 +42,10 @@ function ShowResult() {
           break;
       }
     }
-  }, [dataResult, id]);
+  }, [result]); // Thay đổi từ dataResult, id sang result
 
   useEffect(() => {
-    if (result) {
+    if (result && result.answers) {
       let correct = 0;
       result.answers.forEach((item) => {
         if (item.answer === item.correctAnswer) {
@@ -54,7 +60,37 @@ function ShowResult() {
       let percent = Math.round((correct / result.answers.length) * 100);
       setTotal(percent);
     }
-  }, [result]);
+  }, [result]); // Giữ nguyên result là phụ thuộc
+
+  useEffect(() => {
+    getQuestion().then((data) => {
+      setDataQuestions(data);
+    });
+  }, [id]); // Thêm id làm phụ thuộc
+
+  useEffect(() => {
+    if (result && result.answers) {
+      const questionsInResult = result.answers.map((answer) => {
+        const correspondingQuestion = dataQuestion.find(
+          (question) => question.id === answer.questionId
+        );
+        return {
+          question: correspondingQuestion ? correspondingQuestion.question : "",
+          answers: correspondingQuestion ? correspondingQuestion.answers : [],
+          correctAnswer: correspondingQuestion
+            ? correspondingQuestion.correctAnswer
+            : "",
+          ...answer,
+        };
+      });
+      const updatedResult = {
+        ...result,
+        answers: questionsInResult,
+      };
+      setDataDraw(updatedResult.answers);
+      console.log(dataDraw);
+    }
+  }, [result, dataQuestion]); // Giữ nguyên result và dataQuestion là phụ thuộc
 
   return (
     <>
@@ -62,10 +98,54 @@ function ShowResult() {
         <h1>Kết quả chủ đề: {topic}</h1>
         <div>
           <p>
-            Đúng: <span>{numberTrue}</span> | Sai: <span>{numberWrong}</span>|
-            Tổng số câu: <span>{result.answers.length}</span> | Tỷ lệ đúng:{" "}
-            <span>{total}%</span>
+            Đúng: <span>{numberTrue}</span> | Sai: <span>{numberWrong}</span> |
+            Tổng số câu:{" "}
+            <span>{result && result.answers ? result.answers.length : 0}</span>{" "}
+            | Tỷ lệ đúng: <span>{total}%</span>
           </p>
+
+          <div className="table_results">
+            {dataDraw.map((item, index) => (
+              <div key={index}>
+                <p>
+                  Câu {index + 1}: {item.question}
+                </p>
+                <div className="choice">
+                  {item.answers.map((itemChoice, indexChoice) => {
+                    // Determine the class name for each answer
+                    let className = "";
+                    if (
+                      indexChoice === item.answer &&
+                      indexChoice === item.correctAnswer
+                    ) {
+                      className = "green-color"; // Answered and correct
+                    } else if (
+                      indexChoice === item.answer &&
+                      indexChoice !== item.correctAnswer
+                    ) {
+                      className = "red-color"; // Answered and incorrect
+                    } else if (indexChoice === item.correctAnswer) {
+                      className = "green-color"; // Correct answer, but not chosen by the user
+                    }
+
+                    return (
+                      <label key={indexChoice} className={className}>
+                        <input
+                          type="radio"
+                          name={`question-${item.questionId}`}
+                          value={itemChoice}
+                          checked={indexChoice === item.answer}
+                          disabled
+                        />
+                        {itemChoice}
+                        <br />
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

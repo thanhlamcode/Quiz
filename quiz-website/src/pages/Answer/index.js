@@ -2,18 +2,23 @@ import { useEffect, useState } from "react";
 import { getUserAnswer } from "../../service/getUserAnswer";
 import "./style.scss";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function Answer() {
   const [userAnswersData, setData] = useState([]);
   const userId = useSelector((state) => state.inforUserReducer);
   console.log(userId.userId);
-
+  const navigate = useNavigate();
   useEffect(() => {
     getUserAnswer().then((data) => {
       console.log(data);
       setData(data);
     });
   }, []);
+
+  const handleClick = (id) => {
+    navigate(`/answer/${id}`);
+  };
 
   return (
     <>
@@ -53,7 +58,14 @@ function Answer() {
                     <td>{item.id}</td>
                     <td>{topic}</td>
                     <td>
-                      <button className="view_full">Xem chi tiết</button>
+                      <button
+                        className="view_full"
+                        onClick={() => {
+                          handleClick(item.id);
+                        }}
+                      >
+                        Xem chi tiết
+                      </button>
                     </td>
                   </tr>
                 );
