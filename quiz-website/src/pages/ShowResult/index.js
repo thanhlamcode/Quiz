@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { getQuestion } from "../../service/getQuestions";
 import "./styles.scss";
 import { useDispatch } from "react-redux";
-import { infoTopic } from "../../action/setTopic";
 import { topicAction } from "../../action/topic";
 
 function ShowResult() {
@@ -106,10 +105,10 @@ function ShowResult() {
 
   return (
     <>
-      <div>
+      <div className="page__result">
         <h1>Kết quả chủ đề: {topic}</h1>
         <div>
-          <p>
+          <p className="page__header">
             Đúng: <span>{numberTrue}</span> | Sai: <span>{numberWrong}</span> |
             Tổng số câu:{" "}
             <span>{result && result.answers ? result.answers.length : 0}</span>{" "}
