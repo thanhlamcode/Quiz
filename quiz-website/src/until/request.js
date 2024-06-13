@@ -1,4 +1,4 @@
-const API_DOMAIN = "http://localhost:3002";
+const API_DOMAIN = "https://database-quiz.onrender.com";
 
 export const get = async (path) => {
   // Đúng tên biến là response, không phải respone
